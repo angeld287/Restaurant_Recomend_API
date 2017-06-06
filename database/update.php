@@ -1,5 +1,6 @@
 <?php
  include "db.php";
+ //actualizacion de prueba para github
  if(isset($_POST['update']))
 	 {
 		 $id=$_POST['id'];
