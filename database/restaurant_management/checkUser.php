@@ -1,15 +1,15 @@
 <?php
 	header('Access-Control-Allow-Origin: *');  
 	
-	include "../db.php";
+	include "db.php";
 	
-    $email = $_GET["email"];
+    $name = $_GET["name"];
  
 	
  
-    $email = mysql_real_escape_string( $email );
+    $name = mysql_real_escape_string( $name );
  
-    $result = mysql_query("SELECT email FROM users WHERE email = '$email'");
+    $result = mysql_query("SELECT name FROM users WHERE name = '$name'");
  
     if(!$result)
     {

@@ -1,7 +1,7 @@
 <?php
 	header('Access-Control-Allow-Origin: *');  
 	
-	include "../db.php";
+	include "db.php";
 	
     $email = $_GET["email"];
  
