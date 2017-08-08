@@ -1,12 +1,12 @@
 <?php
- include "db.php";
+ include "../db.php";
  if(isset($_POST['update']))
  {
  $id=$_POST['id'];
- $title=$_POST['title'];
- $duration=$_POST['duration'];
- $price=$_POST['price'];
- $q=mysqli_query($con,"UPDATE `course_details` SET `title`='$title',`duration`='$duration',`price`='$price' where `id`='$id'");
+ $name=$_POST['name'];
+ $email=$_POST['email'];
+ $favorite_cat_restaurant=$_POST['favorite_cat_restaurant'];
+ $q=mysqli_query($con,"UPDATE `users` SET `name`='$name',`email`='$email',`favorite_cat_restaurant`='$favorite_cat_restaurant' where `id`='$id'");
  if($q)
  echo "success";
  else
